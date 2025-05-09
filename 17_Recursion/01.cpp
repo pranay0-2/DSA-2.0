@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// recursion
+// incrementing recursion
 void printArr(int n){
            
     if(n > 10)
@@ -11,10 +11,10 @@ void printArr(int n){
     printArr(n+1);
 }
 
-
+// decrementing recursion 
 int printArr2(int n){
     if(n == 0)
-        return 1;
+        return;
 
      cout << n << " ";
      return printArr2(n-1);
