@@ -12,10 +12,12 @@ int tp(int n){
     // place 2*1 tile vertically
     int ans1 = tp(n-1);
 
-    // place @*1 tile horizontally
+    // place 2*1 tile horizontally
     int ans2 = tp(n-2);
 
     return ans1 + ans2;
+
+    // return tp(n-1) + tp(n-2);    // this is also corect
 }
  
 
