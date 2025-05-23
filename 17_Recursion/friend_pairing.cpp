@@ -16,8 +16,6 @@ int friend_pairing(int n){
     // recursive case
     // single person + pair of n-1 persons
     return friend_pairing(n-1) + (n-1) * friend_pairing(n-2);
-
-
 }
 
 
